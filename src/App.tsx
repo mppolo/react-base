@@ -90,20 +90,20 @@ function App() {
 
   return (
 
-    <div className="h-screen w-screen flex flex-col bg-slate-400 items-center p-6 space-y-4">
+    <div className="h-screen w-screen mx-auto flex flex-col bg-slate-400 items-center p-6 space-y-4">
 
       <h1 className="text-2xl font-bold text-slate-100 text-center">
         Gerenciador de Tarefas
       </h1>
 
-      <div className="w-[500px] bg-slate-100 px-4 py-4 rounded-md shadow-sm space-y-4">
+      <div className="md:w-[500px] w-full bg-slate-100 px-4 py-4 rounded-md shadow-sm space-y-4">
           <AddTask 
             tasks={tasks}  
             updateTasks={updateTasks}
           />
       </div>
 
-        <div className="w-[500px] bg-slate-100 px-4 py-4 rounded-md shadow-sm space-y-4">
+        <div className="md:w-[500px] w-full bg-slate-100 px-4 py-4 rounded-md shadow-sm space-y-4">
           <Tasks 
             tasks={tasks} 
             checkTask={checkTask}
